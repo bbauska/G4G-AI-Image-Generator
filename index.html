@@ -5,24 +5,26 @@
   <!-- Define the character encoding and viewport settings -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
   <!-- Page title -->
   <title>
     AI Image generator Website using HTML, CSS and JavaScript
   </title>
-
+    
   <!-- Link to external CSS file for styling -->
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <!-- Main container for all the content -->
   <div class="main-container">
+
     <!-- Container for the heading and form -->
     <div class="container">
+            
       <!-- Section for page headings -->
       <div class="headings-container">
-        <h1>Cellardoor</h1> <!-- Main heading -->
+        <h1>GeeksforGeeks</h1> <!-- Main heading -->
         <h2 class="heading">
           AI Image generator website using JavaScript
         </h2> <!-- Secondary heading explaining the purpose -->
@@ -32,8 +34,10 @@
           get the AI generated image related to this text.
         </h5> <!-- Subheading with instructions -->
       </div>
+
       <!-- Form container for input and submit button -->
       <div id="generate-image-form" class="form-container">
+                
         <!-- Form to input text and generate image -->
         <form class="my-form">
           <!-- Text input for the user to enter some text -->
@@ -41,6 +45,7 @@
             placeholder="Enter some text..." 
             type="text"
             class="form-input form-controls">
+
           <!-- Button to submit and generate image -->
           <button type="submit" 
             class="image-generate-btn 
@@ -49,10 +54,12 @@
           </button>
         </form>
       </div>
+
       <!-- Section to display the generated image -->
       <div id="images-visible" class="image-container">
         <!-- Placeholder text that will be updated with the result -->
         <p id="imageContainerText"></p>
+                
         <!-- Image tag to display the AI generated image -->
         <img id="generated-image" 
           class="my-generated-image" 
@@ -60,7 +67,8 @@
       </div>
     </div>
   </div>
-  <script src="./js/index.js"></script>
+
+  <script src="index.js"></script>
 </body>
 
 </html>
