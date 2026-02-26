@@ -1,4 +1,4 @@
-<!-- js/index.js for g4g-ai-generator -->
+// js/index.js for ai-generator.
 let generateImageForm = 
   document.getElementById('generate-image-form');
 let formInput = 
@@ -9,23 +9,25 @@ let imageGenerated =
   document.getElementById('generated-image');
 let imageContainer = 
   document.getElementById('images-visible');
+
 async function fetchImages(category) {
   try {
     let response = 
-      await fetch(`use a API`);
+    await fetch(`use a API`);
     if (!response.ok) {
       throw new Error('Unable to fetch the data');
     }
     imageContainerText.innerText = 
-    "Below is your generated Image:";
-    imageContainer.style.display = "block";
-    imageGenerated.src = response.url;
-    console.log(response.url);
+      "Below is your generated Image:";
+      imageContainer.style.display = "block";
+      imageGenerated.src = response.url;
+      console.log(response.url);
   }
   catch (error) {
     console.log(error);
   }
 }
+
 generateImageForm.addEventListener('submit', (e) => {
   e.preventDefault();
   let enteredText = formInput.value;
