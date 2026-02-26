@@ -1,4 +1,4 @@
-// js/index.js for ai-generator.
+/* js/index.js for ai-generator. */
 let generateImageForm = 
   document.getElementById('generate-image-form');
 let formInput = 
